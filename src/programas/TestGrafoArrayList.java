@@ -6,8 +6,6 @@
 package programas;
 
 import grafos.Grafo;
-//import grafos.Vertice;
-//import java.awt.HeadlessException;
 import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
 
