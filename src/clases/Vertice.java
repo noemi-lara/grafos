@@ -14,13 +14,13 @@ import java.util.ArrayList;
 public class Vertice {
   protected String nombre;
   protected int numVertice;
-  protected ArrayList lados;
+  protected ArrayList <Arco> lados;
   
   public Vertice(String x)
   {
     nombre = x;
     numVertice = -1;
-    lados = new ArrayList();
+    lados = new <Arco> ArrayList();
   }
 
     @Override

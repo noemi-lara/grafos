@@ -44,7 +44,7 @@ public class TestGrafo {
         System.out.println("Vertices del grafo " + gra);
         Vertice [] vs; //= new Vertice[n];
         vs = gra.vertices();
-          System.out.println(" " + vs );
+          System.out.println(" " + gra );
         for (int i = 0; i < n; i++){
           System.out.print(vs[i] + " ");
           System.out.println(gra.listaAdyc(i));

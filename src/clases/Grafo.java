@@ -80,7 +80,7 @@ public class Grafo {
         int vb = numVertice(b);
         if (va < 0 || vb < 0)
          throw new Exception("Vértice no existe" + a + " o " + b);
-        Arco ab = new Arco(vb);
+        Arco ab = new Arco(vb, b);
         tablaAdyacencia[va].lados.add(ab);
       }
     }
@@ -93,7 +93,7 @@ public class Grafo {
       vb = numVertice(b);
       if (va < 0 || vb < 0) 
           throw new Exception ("Vértice no existe");
-      Arco ab = new Arco(vb);
+      Arco ab = new Arco(vb, b);
       tablaAdyacencia[va].lados.remove(ab); 
     }
 
@@ -105,7 +105,7 @@ public class Grafo {
       vb = numVertice(b);
       if (va < 0 || vb < 0) 
           throw new Exception ("Vértice no existe");
-      return (tablaAdyacencia[va].lados.contains(new Arco(vb))); 
+      return (tablaAdyacencia[va].lados.contains(new Arco(vb, b))); 
           
     }
 
@@ -122,6 +122,7 @@ public class Grafo {
       String lista = "";
       for (Vertice v : tablaAdyacencia){
           lista += (v + " ");
+          
       }
       return lista;
   }
