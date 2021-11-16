@@ -82,6 +82,9 @@ public class Grafo {
          throw new Exception("Vértice no existe" + a + " o " + b);
         Arco ab = new Arco(vb, b);
         tablaAdyacencia[va].lados.add(ab);
+         //Agregar lo siguiente si el grafo NO es dirigido
+         Arco ba = new Arco(va, a);
+         tablaAdyacencia[vb].lados.add(ba);
       }
     }
  
